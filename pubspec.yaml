@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  video_player: ^2.2.14
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,13 +61,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/youtube.png
+    - assets/images/youtube0.png
+    - assets/images/youtube1.png
     - assets/images/youtube2.png
     - assets/images/youtube3.png
     - assets/images/youtube4.png
     - assets/images/youtube5.png
     - assets/images/youtube_icon.png
     - assets/images/profile.jpg
+    - assets/video/1.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/video_page.dart';
 
 void main() => runApp(YouTubeCloneApp());
 
@@ -25,7 +26,8 @@ class YouTubeCloneApp extends StatelessWidget {
 
 class YouTubeHomePage extends StatelessWidget {
   final List<String> videoImages = [
-    'assets/images/youtube.png',
+    'assets/images/youtube0.png',
+    'assets/images/youtube1.png',
     'assets/images/youtube2.png',
     'assets/images/youtube3.png',
     'assets/images/youtube4.png',
@@ -64,11 +66,16 @@ class YouTubeHomePage extends StatelessWidget {
                 Image.asset(videoImages[index]),
                 ListTile(
                   leading: const CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/youtube.png')),
+                      backgroundImage: AssetImage('assets/images/youtube1.png')),
                   title: Text('Видео #${index + 1}'),
                   subtitle: const Text(
                       'YouTube Channel • 1M просмотров • 3 дня назад'),
                   trailing: const Icon(Icons.more_vert),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => VideoPage(),  // Переход на страницу видео
+                    ));
+                  },
                 )
               ],
             ),
