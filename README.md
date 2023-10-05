@@ -1,6 +1,6 @@
 # youtube_clone
 
-A new Flutter project.
+Youtube flutter clone
 
 ## Getting Started
 
